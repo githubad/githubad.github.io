@@ -504,7 +504,7 @@
     // console.log(pageLink[29]);
 
     twitterLinks.forEach(a => {
-      let newLink = pageLink[i].toString().replace("githubad.github.io", `twitter.com/intent/tweet?text=Javascript30&url=https://githubad.github.io`);
+      let newLink = pageLink[i].toString().replace("githubad.github.io" || "./", `twitter.com/intent/tweet?text=Javascript30&url=https://githubad.github.io`);
       a.href = `${newLink}`;
       i++;
 
